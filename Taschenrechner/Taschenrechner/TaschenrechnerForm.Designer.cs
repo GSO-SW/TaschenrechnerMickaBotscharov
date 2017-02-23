@@ -1,6 +1,6 @@
 ﻿namespace Taschenrechner
 {
-    partial class Form1
+    partial class TaschenrechnerForm
     {
         /// <summary>
         /// Erforderliche Designervariable.

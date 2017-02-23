@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Taschenrechner
 {
-    public partial class Form1 : Form
+    public partial class TaschenrechnerForm : Form
     {
-        public Form1()
+        public TaschenrechnerForm()
         {
             InitializeComponent();
         }
