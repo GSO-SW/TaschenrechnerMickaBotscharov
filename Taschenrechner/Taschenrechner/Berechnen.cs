@@ -8,7 +8,11 @@ namespace Taschenrechner
 {
     class Berechnen
     {
-        int Addieren(int a,int b)
+        int Addieren(int a, int b)
+        {
+            return a + b;
+        }
+        double Addieren(double a, double b)
         {
             return a + b;
         }
