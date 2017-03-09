@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.ausgabeTextBox = new System.Windows.Forms.TextBox();
-            this.eingabeTextBox = new System.Windows.Forms.TextBox();
             this.einsButton = new System.Windows.Forms.Button();
             this.zweiButton = new System.Windows.Forms.Button();
             this.dreiButton = new System.Windows.Forms.Button();
@@ -44,7 +43,6 @@
             this.delButton = new System.Windows.Forms.Button();
             this.kommerButton = new System.Windows.Forms.Button();
             this.ausgabeLabel = new System.Windows.Forms.Label();
-            this.eingabeLabel = new System.Windows.Forms.Label();
             this.MalButton = new System.Windows.Forms.Button();
             this.geteiltButton = new System.Windows.Forms.Button();
             this.plusButton = new System.Windows.Forms.Button();
@@ -53,122 +51,125 @@
             // 
             // ausgabeTextBox
             // 
-            this.ausgabeTextBox.Location = new System.Drawing.Point(13, 13);
+            this.ausgabeTextBox.Location = new System.Drawing.Point(12, 12);
             this.ausgabeTextBox.Name = "ausgabeTextBox";
             this.ausgabeTextBox.Size = new System.Drawing.Size(264, 20);
             this.ausgabeTextBox.TabIndex = 0;
             // 
-            // eingabeTextBox
-            // 
-            this.eingabeTextBox.Location = new System.Drawing.Point(13, 40);
-            this.eingabeTextBox.Name = "eingabeTextBox";
-            this.eingabeTextBox.Size = new System.Drawing.Size(264, 20);
-            this.eingabeTextBox.TabIndex = 1;
-            // 
             // einsButton
             // 
             this.einsButton.BackColor = System.Drawing.Color.White;
-            this.einsButton.Location = new System.Drawing.Point(14, 229);
+            this.einsButton.Location = new System.Drawing.Point(21, 180);
             this.einsButton.Name = "einsButton";
             this.einsButton.Size = new System.Drawing.Size(75, 23);
             this.einsButton.TabIndex = 2;
             this.einsButton.Text = "1";
             this.einsButton.UseVisualStyleBackColor = false;
+            this.einsButton.Click += new System.EventHandler(this.button_Click);
             // 
             // zweiButton
             // 
             this.zweiButton.BackColor = System.Drawing.Color.White;
-            this.zweiButton.Location = new System.Drawing.Point(95, 229);
+            this.zweiButton.Location = new System.Drawing.Point(102, 180);
             this.zweiButton.Name = "zweiButton";
             this.zweiButton.Size = new System.Drawing.Size(75, 23);
             this.zweiButton.TabIndex = 3;
             this.zweiButton.Text = "2";
             this.zweiButton.UseVisualStyleBackColor = false;
+            this.zweiButton.Click += new System.EventHandler(this.button_Click);
             // 
             // dreiButton
             // 
             this.dreiButton.BackColor = System.Drawing.Color.White;
-            this.dreiButton.Location = new System.Drawing.Point(176, 229);
+            this.dreiButton.Location = new System.Drawing.Point(183, 180);
             this.dreiButton.Name = "dreiButton";
             this.dreiButton.Size = new System.Drawing.Size(75, 23);
             this.dreiButton.TabIndex = 4;
             this.dreiButton.Text = "3";
             this.dreiButton.UseVisualStyleBackColor = false;
+            this.dreiButton.Click += new System.EventHandler(this.button_Click);
             // 
             // vierButton
             // 
             this.vierButton.BackColor = System.Drawing.Color.White;
-            this.vierButton.Location = new System.Drawing.Point(14, 200);
+            this.vierButton.Location = new System.Drawing.Point(21, 151);
             this.vierButton.Name = "vierButton";
             this.vierButton.Size = new System.Drawing.Size(75, 23);
             this.vierButton.TabIndex = 5;
             this.vierButton.Text = "4";
             this.vierButton.UseVisualStyleBackColor = false;
+            this.vierButton.Click += new System.EventHandler(this.button_Click);
             // 
             // fünfButton
             // 
             this.fünfButton.BackColor = System.Drawing.Color.White;
-            this.fünfButton.Location = new System.Drawing.Point(95, 200);
+            this.fünfButton.Location = new System.Drawing.Point(102, 151);
             this.fünfButton.Name = "fünfButton";
             this.fünfButton.Size = new System.Drawing.Size(75, 23);
             this.fünfButton.TabIndex = 6;
             this.fünfButton.Text = "5";
             this.fünfButton.UseVisualStyleBackColor = false;
+            this.fünfButton.Click += new System.EventHandler(this.button_Click);
             // 
             // sechsButton
             // 
             this.sechsButton.BackColor = System.Drawing.Color.White;
-            this.sechsButton.Location = new System.Drawing.Point(176, 200);
+            this.sechsButton.Location = new System.Drawing.Point(183, 151);
             this.sechsButton.Name = "sechsButton";
             this.sechsButton.Size = new System.Drawing.Size(75, 23);
             this.sechsButton.TabIndex = 7;
             this.sechsButton.Text = "6";
             this.sechsButton.UseVisualStyleBackColor = false;
+            this.sechsButton.Click += new System.EventHandler(this.button_Click);
             // 
             // siebenButton
             // 
             this.siebenButton.BackColor = System.Drawing.Color.White;
-            this.siebenButton.Location = new System.Drawing.Point(15, 171);
+            this.siebenButton.Location = new System.Drawing.Point(22, 122);
             this.siebenButton.Name = "siebenButton";
             this.siebenButton.Size = new System.Drawing.Size(75, 23);
             this.siebenButton.TabIndex = 8;
             this.siebenButton.Text = "7";
             this.siebenButton.UseVisualStyleBackColor = false;
+            this.siebenButton.Click += new System.EventHandler(this.button_Click);
             // 
             // achtButton
             // 
             this.achtButton.BackColor = System.Drawing.Color.White;
-            this.achtButton.Location = new System.Drawing.Point(97, 171);
+            this.achtButton.Location = new System.Drawing.Point(104, 122);
             this.achtButton.Name = "achtButton";
             this.achtButton.Size = new System.Drawing.Size(75, 23);
             this.achtButton.TabIndex = 9;
             this.achtButton.Text = "8";
             this.achtButton.UseVisualStyleBackColor = false;
+            this.achtButton.Click += new System.EventHandler(this.button_Click);
             // 
             // neunButton
             // 
             this.neunButton.BackColor = System.Drawing.Color.White;
-            this.neunButton.Location = new System.Drawing.Point(176, 171);
+            this.neunButton.Location = new System.Drawing.Point(183, 122);
             this.neunButton.Name = "neunButton";
             this.neunButton.Size = new System.Drawing.Size(75, 23);
             this.neunButton.TabIndex = 10;
             this.neunButton.Text = "9";
             this.neunButton.UseVisualStyleBackColor = false;
+            this.neunButton.Click += new System.EventHandler(this.button_Click);
             // 
             // nullButton
             // 
             this.nullButton.BackColor = System.Drawing.Color.White;
-            this.nullButton.Location = new System.Drawing.Point(15, 258);
+            this.nullButton.Location = new System.Drawing.Point(22, 209);
             this.nullButton.Name = "nullButton";
             this.nullButton.Size = new System.Drawing.Size(157, 23);
             this.nullButton.TabIndex = 11;
             this.nullButton.Text = "0";
             this.nullButton.UseVisualStyleBackColor = false;
+            this.nullButton.Click += new System.EventHandler(this.button_Click);
             // 
             // enterButton
             // 
             this.enterButton.BackColor = System.Drawing.Color.DodgerBlue;
-            this.enterButton.Location = new System.Drawing.Point(295, 316);
+            this.enterButton.Location = new System.Drawing.Point(302, 267);
             this.enterButton.Name = "enterButton";
             this.enterButton.Size = new System.Drawing.Size(75, 23);
             this.enterButton.TabIndex = 12;
@@ -179,7 +180,7 @@
             // 
             this.delButton.BackColor = System.Drawing.Color.OrangeRed;
             this.delButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.delButton.Location = new System.Drawing.Point(176, 126);
+            this.delButton.Location = new System.Drawing.Point(183, 77);
             this.delButton.Name = "delButton";
             this.delButton.Size = new System.Drawing.Size(75, 23);
             this.delButton.TabIndex = 13;
@@ -189,12 +190,13 @@
             // kommerButton
             // 
             this.kommerButton.BackColor = System.Drawing.Color.White;
-            this.kommerButton.Location = new System.Drawing.Point(176, 257);
+            this.kommerButton.Location = new System.Drawing.Point(183, 208);
             this.kommerButton.Name = "kommerButton";
             this.kommerButton.Size = new System.Drawing.Size(75, 23);
             this.kommerButton.TabIndex = 14;
             this.kommerButton.Text = ",";
             this.kommerButton.UseVisualStyleBackColor = false;
+            this.kommerButton.Click += new System.EventHandler(this.button_Click);
             // 
             // ausgabeLabel
             // 
@@ -206,67 +208,60 @@
             this.ausgabeLabel.TabIndex = 15;
             this.ausgabeLabel.Text = "Ausgabe";
             // 
-            // eingabeLabel
-            // 
-            this.eingabeLabel.AutoSize = true;
-            this.eingabeLabel.BackColor = System.Drawing.Color.Fuchsia;
-            this.eingabeLabel.Location = new System.Drawing.Point(284, 40);
-            this.eingabeLabel.Name = "eingabeLabel";
-            this.eingabeLabel.Size = new System.Drawing.Size(46, 13);
-            this.eingabeLabel.TabIndex = 16;
-            this.eingabeLabel.Text = "Eingabe";
-            // 
             // MalButton
             // 
             this.MalButton.BackColor = System.Drawing.Color.GreenYellow;
-            this.MalButton.Location = new System.Drawing.Point(295, 228);
+            this.MalButton.Location = new System.Drawing.Point(302, 179);
             this.MalButton.Name = "MalButton";
             this.MalButton.Size = new System.Drawing.Size(75, 23);
             this.MalButton.TabIndex = 17;
             this.MalButton.Text = "x";
             this.MalButton.UseVisualStyleBackColor = false;
+            this.MalButton.Click += new System.EventHandler(this.button_Click);
             // 
             // geteiltButton
             // 
             this.geteiltButton.BackColor = System.Drawing.Color.GreenYellow;
-            this.geteiltButton.Location = new System.Drawing.Point(295, 258);
+            this.geteiltButton.Location = new System.Drawing.Point(302, 209);
             this.geteiltButton.Name = "geteiltButton";
             this.geteiltButton.Size = new System.Drawing.Size(75, 23);
             this.geteiltButton.TabIndex = 18;
-            this.geteiltButton.Text = ":";
+            this.geteiltButton.Text = " ÷ ";
             this.geteiltButton.UseVisualStyleBackColor = false;
+            this.geteiltButton.Click += new System.EventHandler(this.button_Click);
             // 
             // plusButton
             // 
             this.plusButton.BackColor = System.Drawing.Color.GreenYellow;
-            this.plusButton.Location = new System.Drawing.Point(295, 170);
+            this.plusButton.Location = new System.Drawing.Point(302, 121);
             this.plusButton.Name = "plusButton";
             this.plusButton.Size = new System.Drawing.Size(75, 23);
             this.plusButton.TabIndex = 19;
             this.plusButton.Text = "+";
             this.plusButton.UseVisualStyleBackColor = false;
+            this.plusButton.Click += new System.EventHandler(this.button_Click);
             // 
             // minusButton
             // 
             this.minusButton.BackColor = System.Drawing.Color.GreenYellow;
-            this.minusButton.Location = new System.Drawing.Point(295, 200);
+            this.minusButton.Location = new System.Drawing.Point(302, 151);
             this.minusButton.Name = "minusButton";
             this.minusButton.Size = new System.Drawing.Size(75, 23);
             this.minusButton.TabIndex = 20;
             this.minusButton.Text = "-";
             this.minusButton.UseVisualStyleBackColor = false;
+            this.minusButton.Click += new System.EventHandler(this.button_Click);
             // 
             // TaschenrechnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(404, 370);
+            this.ClientSize = new System.Drawing.Size(404, 314);
             this.Controls.Add(this.minusButton);
             this.Controls.Add(this.plusButton);
             this.Controls.Add(this.geteiltButton);
             this.Controls.Add(this.MalButton);
-            this.Controls.Add(this.eingabeLabel);
             this.Controls.Add(this.ausgabeLabel);
             this.Controls.Add(this.kommerButton);
             this.Controls.Add(this.delButton);
@@ -281,7 +276,6 @@
             this.Controls.Add(this.dreiButton);
             this.Controls.Add(this.zweiButton);
             this.Controls.Add(this.einsButton);
-            this.Controls.Add(this.eingabeTextBox);
             this.Controls.Add(this.ausgabeTextBox);
             this.Name = "TaschenrechnerForm";
             this.Text = "Taschenrechner";
@@ -293,7 +287,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox ausgabeTextBox;
-        private System.Windows.Forms.TextBox eingabeTextBox;
         private System.Windows.Forms.Button einsButton;
         private System.Windows.Forms.Button zweiButton;
         private System.Windows.Forms.Button dreiButton;
@@ -308,7 +301,6 @@
         private System.Windows.Forms.Button delButton;
         private System.Windows.Forms.Button kommerButton;
         private System.Windows.Forms.Label ausgabeLabel;
-        private System.Windows.Forms.Label eingabeLabel;
         private System.Windows.Forms.Button MalButton;
         private System.Windows.Forms.Button geteiltButton;
         private System.Windows.Forms.Button plusButton;
