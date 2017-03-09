@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaschenrechnerForm));
             this.ausgabeTextBox = new System.Windows.Forms.TextBox();
             this.einsButton = new System.Windows.Forms.Button();
             this.zweiButton = new System.Windows.Forms.Button();
@@ -257,7 +258,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(404, 314);
+            this.BackgroundImage = global::Taschenrechner.Properties.Resources.Wallario_Premium_Acrylglasbild_Planeten_im_Weltall_Sterne_Weltraum1;
+            this.ClientSize = new System.Drawing.Size(399, 360);
             this.Controls.Add(this.minusButton);
             this.Controls.Add(this.plusButton);
             this.Controls.Add(this.geteiltButton);
@@ -277,6 +279,8 @@
             this.Controls.Add(this.zweiButton);
             this.Controls.Add(this.einsButton);
             this.Controls.Add(this.ausgabeTextBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TaschenrechnerForm";
             this.Text = "Taschenrechner";
             this.ResumeLayout(false);
