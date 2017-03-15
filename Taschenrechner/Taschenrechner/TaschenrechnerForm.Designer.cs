@@ -41,13 +41,14 @@
             this.neunButton = new System.Windows.Forms.Button();
             this.nullButton = new System.Windows.Forms.Button();
             this.enterButton = new System.Windows.Forms.Button();
-            this.delButton = new System.Windows.Forms.Button();
+            this.acButton = new System.Windows.Forms.Button();
             this.kommerButton = new System.Windows.Forms.Button();
             this.ausgabeLabel = new System.Windows.Forms.Label();
             this.MalButton = new System.Windows.Forms.Button();
             this.geteiltButton = new System.Windows.Forms.Button();
             this.plusButton = new System.Windows.Forms.Button();
             this.minusButton = new System.Windows.Forms.Button();
+            this.delButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ausgabeTextBox
@@ -176,17 +177,19 @@
             this.enterButton.TabIndex = 12;
             this.enterButton.Text = "Enter";
             this.enterButton.UseVisualStyleBackColor = false;
+            this.enterButton.Click += new System.EventHandler(this.enterButton_Click);
             // 
-            // delButton
+            // acButton
             // 
-            this.delButton.BackColor = System.Drawing.Color.OrangeRed;
-            this.delButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.delButton.Location = new System.Drawing.Point(183, 77);
-            this.delButton.Name = "delButton";
-            this.delButton.Size = new System.Drawing.Size(75, 23);
-            this.delButton.TabIndex = 13;
-            this.delButton.Text = "DEL";
-            this.delButton.UseVisualStyleBackColor = false;
+            this.acButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.acButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.acButton.Location = new System.Drawing.Point(264, 77);
+            this.acButton.Name = "acButton";
+            this.acButton.Size = new System.Drawing.Size(75, 23);
+            this.acButton.TabIndex = 13;
+            this.acButton.Text = "AC";
+            this.acButton.UseVisualStyleBackColor = false;
+            this.acButton.Click += new System.EventHandler(this.acButton_Click);
             // 
             // kommerButton
             // 
@@ -197,7 +200,6 @@
             this.kommerButton.TabIndex = 14;
             this.kommerButton.Text = ",";
             this.kommerButton.UseVisualStyleBackColor = false;
-            this.kommerButton.Click += new System.EventHandler(this.button_Click);
             // 
             // ausgabeLabel
             // 
@@ -218,7 +220,7 @@
             this.MalButton.TabIndex = 17;
             this.MalButton.Text = "x";
             this.MalButton.UseVisualStyleBackColor = false;
-            this.MalButton.Click += new System.EventHandler(this.button_Click);
+            this.MalButton.Click += new System.EventHandler(this.zeichen_Click);
             // 
             // geteiltButton
             // 
@@ -229,7 +231,7 @@
             this.geteiltButton.TabIndex = 18;
             this.geteiltButton.Text = " ÷ ";
             this.geteiltButton.UseVisualStyleBackColor = false;
-            this.geteiltButton.Click += new System.EventHandler(this.button_Click);
+            this.geteiltButton.Click += new System.EventHandler(this.zeichen_Click);
             // 
             // plusButton
             // 
@@ -240,7 +242,7 @@
             this.plusButton.TabIndex = 19;
             this.plusButton.Text = "+";
             this.plusButton.UseVisualStyleBackColor = false;
-            this.plusButton.Click += new System.EventHandler(this.button_Click);
+            this.plusButton.Click += new System.EventHandler(this.zeichen_Click);
             // 
             // minusButton
             // 
@@ -251,7 +253,18 @@
             this.minusButton.TabIndex = 20;
             this.minusButton.Text = "-";
             this.minusButton.UseVisualStyleBackColor = false;
-            this.minusButton.Click += new System.EventHandler(this.button_Click);
+            this.minusButton.Click += new System.EventHandler(this.zeichen_Click);
+            // 
+            // delButton
+            // 
+            this.delButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.delButton.ForeColor = System.Drawing.Color.Black;
+            this.delButton.Location = new System.Drawing.Point(183, 77);
+            this.delButton.Name = "delButton";
+            this.delButton.Size = new System.Drawing.Size(75, 23);
+            this.delButton.TabIndex = 21;
+            this.delButton.Text = "DEL";
+            this.delButton.UseVisualStyleBackColor = false;
             // 
             // TaschenrechnerForm
             // 
@@ -260,13 +273,14 @@
             this.BackColor = System.Drawing.Color.Gray;
             this.BackgroundImage = global::Taschenrechner.Properties.Resources.Wallario_Premium_Acrylglasbild_Planeten_im_Weltall_Sterne_Weltraum1;
             this.ClientSize = new System.Drawing.Size(399, 360);
+            this.Controls.Add(this.delButton);
             this.Controls.Add(this.minusButton);
             this.Controls.Add(this.plusButton);
             this.Controls.Add(this.geteiltButton);
             this.Controls.Add(this.MalButton);
             this.Controls.Add(this.ausgabeLabel);
             this.Controls.Add(this.kommerButton);
-            this.Controls.Add(this.delButton);
+            this.Controls.Add(this.acButton);
             this.Controls.Add(this.enterButton);
             this.Controls.Add(this.nullButton);
             this.Controls.Add(this.neunButton);
@@ -302,13 +316,14 @@
         private System.Windows.Forms.Button neunButton;
         private System.Windows.Forms.Button nullButton;
         private System.Windows.Forms.Button enterButton;
-        private System.Windows.Forms.Button delButton;
+        private System.Windows.Forms.Button acButton;
         private System.Windows.Forms.Button kommerButton;
         private System.Windows.Forms.Label ausgabeLabel;
         private System.Windows.Forms.Button MalButton;
         private System.Windows.Forms.Button geteiltButton;
         private System.Windows.Forms.Button plusButton;
         private System.Windows.Forms.Button minusButton;
+        private System.Windows.Forms.Button delButton;
     }
 }
 

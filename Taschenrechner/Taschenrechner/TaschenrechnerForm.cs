@@ -12,6 +12,10 @@ namespace Taschenrechner
 {
     public partial class TaschenrechnerForm : Form
     {
+        Double wert = 0;
+        String operation = "";
+        bool zeichen = false;
+
         public TaschenrechnerForm()
         {
             InitializeComponent();
@@ -19,8 +23,31 @@ namespace Taschenrechner
 
         private void button_Click(object sender, EventArgs e)
         {
+            if (ausgabeTextBox.Text == "0" || zeichen)
+                ausgabeTextBox.Clear();
             Button b = (Button)sender;
             ausgabeTextBox.Text = ausgabeTextBox.Text + b.Text;
         }
+
+        private void acButton_Click(object sender, EventArgs e)
+        {
+            ausgabeTextBox.Text = "";
+        }
+
+        private void zeichen_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            operation = b.Text;
+            wert = Convert.ToDouble(ausgabeTextBox.Text);
+            zeichen = true;
+        }
+
+        private void enterButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
     }
 }
