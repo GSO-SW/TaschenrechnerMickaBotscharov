@@ -23,7 +23,7 @@ namespace Taschenrechner
 
         private void button_Click(object sender, EventArgs e)
         {
-            if (ausgabeTextBox.Text == "0" || zeichen)
+            if ((ausgabeTextBox.Text == "0") || (zeichen))
                 ausgabeTextBox.Clear();
             Button b = (Button)sender;
             ausgabeTextBox.Text = ausgabeTextBox.Text + b.Text;
@@ -31,7 +31,7 @@ namespace Taschenrechner
 
         private void acButton_Click(object sender, EventArgs e)
         {
-            ausgabeTextBox.Text = "";
+            ausgabeTextBox.Text = "0";
         }
 
         private void zeichen_Click(object sender, EventArgs e)
@@ -44,10 +44,24 @@ namespace Taschenrechner
 
         private void enterButton_Click(object sender, EventArgs e)
         {
-
+            switch(operation)
+            {
+                case "+":
+                    ausgabeTextBox.Text = (wert + Convert.ToDouble(ausgabeTextBox.Text)).ToString();
+                    break;
+                case "-":
+                    ausgabeTextBox.Text = (wert - Convert.ToDouble(ausgabeTextBox.Text)).ToString();
+                    break;
+                case "*":
+                    ausgabeTextBox.Text = (wert * Convert.ToDouble(ausgabeTextBox.Text)).ToString();
+                    break;
+                case  "/":
+                    ausgabeTextBox.Text = (wert / Convert.ToDouble(ausgabeTextBox.Text)).ToString();
+                    break;
+                default:
+                    break;
+            }
+            zeichen = false;
         }
-
-
-
     }
 }

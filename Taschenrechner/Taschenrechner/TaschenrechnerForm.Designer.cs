@@ -57,13 +57,15 @@
             this.ausgabeTextBox.Name = "ausgabeTextBox";
             this.ausgabeTextBox.Size = new System.Drawing.Size(264, 20);
             this.ausgabeTextBox.TabIndex = 0;
+            this.ausgabeTextBox.Text = "0";
+            this.ausgabeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // einsButton
             // 
             this.einsButton.BackColor = System.Drawing.Color.White;
-            this.einsButton.Location = new System.Drawing.Point(21, 180);
+            this.einsButton.Location = new System.Drawing.Point(21, 209);
             this.einsButton.Name = "einsButton";
-            this.einsButton.Size = new System.Drawing.Size(75, 23);
+            this.einsButton.Size = new System.Drawing.Size(75, 39);
             this.einsButton.TabIndex = 2;
             this.einsButton.Text = "1";
             this.einsButton.UseVisualStyleBackColor = false;
@@ -72,9 +74,9 @@
             // zweiButton
             // 
             this.zweiButton.BackColor = System.Drawing.Color.White;
-            this.zweiButton.Location = new System.Drawing.Point(102, 180);
+            this.zweiButton.Location = new System.Drawing.Point(103, 209);
             this.zweiButton.Name = "zweiButton";
-            this.zweiButton.Size = new System.Drawing.Size(75, 23);
+            this.zweiButton.Size = new System.Drawing.Size(75, 39);
             this.zweiButton.TabIndex = 3;
             this.zweiButton.Text = "2";
             this.zweiButton.UseVisualStyleBackColor = false;
@@ -83,9 +85,9 @@
             // dreiButton
             // 
             this.dreiButton.BackColor = System.Drawing.Color.White;
-            this.dreiButton.Location = new System.Drawing.Point(183, 180);
+            this.dreiButton.Location = new System.Drawing.Point(183, 209);
             this.dreiButton.Name = "dreiButton";
-            this.dreiButton.Size = new System.Drawing.Size(75, 23);
+            this.dreiButton.Size = new System.Drawing.Size(75, 39);
             this.dreiButton.TabIndex = 4;
             this.dreiButton.Text = "3";
             this.dreiButton.UseVisualStyleBackColor = false;
@@ -94,9 +96,9 @@
             // vierButton
             // 
             this.vierButton.BackColor = System.Drawing.Color.White;
-            this.vierButton.Location = new System.Drawing.Point(21, 151);
+            this.vierButton.Location = new System.Drawing.Point(21, 168);
             this.vierButton.Name = "vierButton";
-            this.vierButton.Size = new System.Drawing.Size(75, 23);
+            this.vierButton.Size = new System.Drawing.Size(75, 35);
             this.vierButton.TabIndex = 5;
             this.vierButton.Text = "4";
             this.vierButton.UseVisualStyleBackColor = false;
@@ -105,9 +107,9 @@
             // fünfButton
             // 
             this.fünfButton.BackColor = System.Drawing.Color.White;
-            this.fünfButton.Location = new System.Drawing.Point(102, 151);
+            this.fünfButton.Location = new System.Drawing.Point(102, 168);
             this.fünfButton.Name = "fünfButton";
-            this.fünfButton.Size = new System.Drawing.Size(75, 23);
+            this.fünfButton.Size = new System.Drawing.Size(75, 35);
             this.fünfButton.TabIndex = 6;
             this.fünfButton.Text = "5";
             this.fünfButton.UseVisualStyleBackColor = false;
@@ -116,9 +118,9 @@
             // sechsButton
             // 
             this.sechsButton.BackColor = System.Drawing.Color.White;
-            this.sechsButton.Location = new System.Drawing.Point(183, 151);
+            this.sechsButton.Location = new System.Drawing.Point(183, 168);
             this.sechsButton.Name = "sechsButton";
-            this.sechsButton.Size = new System.Drawing.Size(75, 23);
+            this.sechsButton.Size = new System.Drawing.Size(75, 35);
             this.sechsButton.TabIndex = 7;
             this.sechsButton.Text = "6";
             this.sechsButton.UseVisualStyleBackColor = false;
@@ -127,9 +129,9 @@
             // siebenButton
             // 
             this.siebenButton.BackColor = System.Drawing.Color.White;
-            this.siebenButton.Location = new System.Drawing.Point(22, 122);
+            this.siebenButton.Location = new System.Drawing.Point(21, 125);
             this.siebenButton.Name = "siebenButton";
-            this.siebenButton.Size = new System.Drawing.Size(75, 23);
+            this.siebenButton.Size = new System.Drawing.Size(75, 37);
             this.siebenButton.TabIndex = 8;
             this.siebenButton.Text = "7";
             this.siebenButton.UseVisualStyleBackColor = false;
@@ -138,9 +140,9 @@
             // achtButton
             // 
             this.achtButton.BackColor = System.Drawing.Color.White;
-            this.achtButton.Location = new System.Drawing.Point(104, 122);
+            this.achtButton.Location = new System.Drawing.Point(103, 125);
             this.achtButton.Name = "achtButton";
-            this.achtButton.Size = new System.Drawing.Size(75, 23);
+            this.achtButton.Size = new System.Drawing.Size(75, 37);
             this.achtButton.TabIndex = 9;
             this.achtButton.Text = "8";
             this.achtButton.UseVisualStyleBackColor = false;
@@ -149,9 +151,9 @@
             // neunButton
             // 
             this.neunButton.BackColor = System.Drawing.Color.White;
-            this.neunButton.Location = new System.Drawing.Point(183, 122);
+            this.neunButton.Location = new System.Drawing.Point(183, 125);
             this.neunButton.Name = "neunButton";
-            this.neunButton.Size = new System.Drawing.Size(75, 23);
+            this.neunButton.Size = new System.Drawing.Size(75, 37);
             this.neunButton.TabIndex = 10;
             this.neunButton.Text = "9";
             this.neunButton.UseVisualStyleBackColor = false;
@@ -160,9 +162,9 @@
             // nullButton
             // 
             this.nullButton.BackColor = System.Drawing.Color.White;
-            this.nullButton.Location = new System.Drawing.Point(22, 209);
+            this.nullButton.Location = new System.Drawing.Point(21, 254);
             this.nullButton.Name = "nullButton";
-            this.nullButton.Size = new System.Drawing.Size(157, 23);
+            this.nullButton.Size = new System.Drawing.Size(157, 38);
             this.nullButton.TabIndex = 11;
             this.nullButton.Text = "0";
             this.nullButton.UseVisualStyleBackColor = false;
@@ -171,9 +173,9 @@
             // enterButton
             // 
             this.enterButton.BackColor = System.Drawing.Color.DodgerBlue;
-            this.enterButton.Location = new System.Drawing.Point(302, 267);
+            this.enterButton.Location = new System.Drawing.Point(302, 280);
             this.enterButton.Name = "enterButton";
-            this.enterButton.Size = new System.Drawing.Size(75, 23);
+            this.enterButton.Size = new System.Drawing.Size(75, 52);
             this.enterButton.TabIndex = 12;
             this.enterButton.Text = "Enter";
             this.enterButton.UseVisualStyleBackColor = false;
@@ -183,9 +185,9 @@
             // 
             this.acButton.BackColor = System.Drawing.Color.OrangeRed;
             this.acButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.acButton.Location = new System.Drawing.Point(264, 77);
+            this.acButton.Location = new System.Drawing.Point(264, 66);
             this.acButton.Name = "acButton";
-            this.acButton.Size = new System.Drawing.Size(75, 23);
+            this.acButton.Size = new System.Drawing.Size(75, 34);
             this.acButton.TabIndex = 13;
             this.acButton.Text = "AC";
             this.acButton.UseVisualStyleBackColor = false;
@@ -194,12 +196,13 @@
             // kommerButton
             // 
             this.kommerButton.BackColor = System.Drawing.Color.White;
-            this.kommerButton.Location = new System.Drawing.Point(183, 208);
+            this.kommerButton.Location = new System.Drawing.Point(183, 254);
             this.kommerButton.Name = "kommerButton";
-            this.kommerButton.Size = new System.Drawing.Size(75, 23);
+            this.kommerButton.Size = new System.Drawing.Size(75, 38);
             this.kommerButton.TabIndex = 14;
             this.kommerButton.Text = ",";
             this.kommerButton.UseVisualStyleBackColor = false;
+            this.kommerButton.Click += new System.EventHandler(this.button_Click);
             // 
             // ausgabeLabel
             // 
@@ -214,31 +217,31 @@
             // MalButton
             // 
             this.MalButton.BackColor = System.Drawing.Color.GreenYellow;
-            this.MalButton.Location = new System.Drawing.Point(302, 179);
+            this.MalButton.Location = new System.Drawing.Point(302, 195);
             this.MalButton.Name = "MalButton";
-            this.MalButton.Size = new System.Drawing.Size(75, 23);
+            this.MalButton.Size = new System.Drawing.Size(75, 35);
             this.MalButton.TabIndex = 17;
-            this.MalButton.Text = "x";
+            this.MalButton.Text = "*";
             this.MalButton.UseVisualStyleBackColor = false;
             this.MalButton.Click += new System.EventHandler(this.zeichen_Click);
             // 
             // geteiltButton
             // 
             this.geteiltButton.BackColor = System.Drawing.Color.GreenYellow;
-            this.geteiltButton.Location = new System.Drawing.Point(302, 209);
+            this.geteiltButton.Location = new System.Drawing.Point(302, 236);
             this.geteiltButton.Name = "geteiltButton";
-            this.geteiltButton.Size = new System.Drawing.Size(75, 23);
+            this.geteiltButton.Size = new System.Drawing.Size(75, 38);
             this.geteiltButton.TabIndex = 18;
-            this.geteiltButton.Text = " ÷ ";
+            this.geteiltButton.Text = "/";
             this.geteiltButton.UseVisualStyleBackColor = false;
             this.geteiltButton.Click += new System.EventHandler(this.zeichen_Click);
             // 
             // plusButton
             // 
             this.plusButton.BackColor = System.Drawing.Color.GreenYellow;
-            this.plusButton.Location = new System.Drawing.Point(302, 121);
+            this.plusButton.Location = new System.Drawing.Point(302, 106);
             this.plusButton.Name = "plusButton";
-            this.plusButton.Size = new System.Drawing.Size(75, 23);
+            this.plusButton.Size = new System.Drawing.Size(75, 38);
             this.plusButton.TabIndex = 19;
             this.plusButton.Text = "+";
             this.plusButton.UseVisualStyleBackColor = false;
@@ -249,7 +252,7 @@
             this.minusButton.BackColor = System.Drawing.Color.GreenYellow;
             this.minusButton.Location = new System.Drawing.Point(302, 151);
             this.minusButton.Name = "minusButton";
-            this.minusButton.Size = new System.Drawing.Size(75, 23);
+            this.minusButton.Size = new System.Drawing.Size(75, 38);
             this.minusButton.TabIndex = 20;
             this.minusButton.Text = "-";
             this.minusButton.UseVisualStyleBackColor = false;
@@ -259,9 +262,9 @@
             // 
             this.delButton.BackColor = System.Drawing.Color.OrangeRed;
             this.delButton.ForeColor = System.Drawing.Color.Black;
-            this.delButton.Location = new System.Drawing.Point(183, 77);
+            this.delButton.Location = new System.Drawing.Point(183, 66);
             this.delButton.Name = "delButton";
-            this.delButton.Size = new System.Drawing.Size(75, 23);
+            this.delButton.Size = new System.Drawing.Size(75, 34);
             this.delButton.TabIndex = 21;
             this.delButton.Text = "DEL";
             this.delButton.UseVisualStyleBackColor = false;
@@ -272,7 +275,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.BackgroundImage = global::Taschenrechner.Properties.Resources.Wallario_Premium_Acrylglasbild_Planeten_im_Weltall_Sterne_Weltraum1;
-            this.ClientSize = new System.Drawing.Size(399, 360);
+            this.ClientSize = new System.Drawing.Size(401, 364);
             this.Controls.Add(this.delButton);
             this.Controls.Add(this.minusButton);
             this.Controls.Add(this.plusButton);
