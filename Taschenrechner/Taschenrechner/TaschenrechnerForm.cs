@@ -82,7 +82,7 @@ namespace Taschenrechner
                 default:
                     break;
             }
-            wert = Convert.ToInt32(ausgabeTextBox.Text);
+            wert = Convert.ToDouble(ausgabeTextBox.Text);
             operation = "";
         }
 
@@ -141,6 +141,9 @@ namespace Taschenrechner
                     break;
                 case "enter":
                     enterButton.PerformClick();
+                    break;
+                case ",":
+                    kommerButton.PerformClick();
                     break;
                 default:
                     break;
