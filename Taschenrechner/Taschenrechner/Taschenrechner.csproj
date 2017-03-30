@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Berechnen.cs" />
     <Compile Include="TaschenrechnerForm.cs">
       <SubType>Form</SubType>
     </Compile>

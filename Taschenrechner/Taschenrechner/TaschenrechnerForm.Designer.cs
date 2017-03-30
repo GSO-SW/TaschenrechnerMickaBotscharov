@@ -44,18 +44,20 @@
             this.acButton = new System.Windows.Forms.Button();
             this.kommerButton = new System.Windows.Forms.Button();
             this.ausgabeLabel = new System.Windows.Forms.Label();
-            this.MalButton = new System.Windows.Forms.Button();
+            this.malButton = new System.Windows.Forms.Button();
             this.geteiltButton = new System.Windows.Forms.Button();
             this.plusButton = new System.Windows.Forms.Button();
             this.minusButton = new System.Windows.Forms.Button();
             this.delButton = new System.Windows.Forms.Button();
+            this.operationLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ausgabeTextBox
             // 
-            this.ausgabeTextBox.Location = new System.Drawing.Point(12, 12);
+            this.ausgabeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ausgabeTextBox.Location = new System.Drawing.Point(12, 22);
             this.ausgabeTextBox.Name = "ausgabeTextBox";
-            this.ausgabeTextBox.Size = new System.Drawing.Size(264, 20);
+            this.ausgabeTextBox.Size = new System.Drawing.Size(264, 31);
             this.ausgabeTextBox.TabIndex = 0;
             this.ausgabeTextBox.Text = "0";
             this.ausgabeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -208,22 +210,22 @@
             // 
             this.ausgabeLabel.AutoSize = true;
             this.ausgabeLabel.BackColor = System.Drawing.Color.Fuchsia;
-            this.ausgabeLabel.Location = new System.Drawing.Point(284, 19);
+            this.ausgabeLabel.Location = new System.Drawing.Point(282, 40);
             this.ausgabeLabel.Name = "ausgabeLabel";
             this.ausgabeLabel.Size = new System.Drawing.Size(49, 13);
             this.ausgabeLabel.TabIndex = 15;
             this.ausgabeLabel.Text = "Ausgabe";
             // 
-            // MalButton
+            // malButton
             // 
-            this.MalButton.BackColor = System.Drawing.Color.GreenYellow;
-            this.MalButton.Location = new System.Drawing.Point(302, 195);
-            this.MalButton.Name = "MalButton";
-            this.MalButton.Size = new System.Drawing.Size(75, 35);
-            this.MalButton.TabIndex = 17;
-            this.MalButton.Text = "*";
-            this.MalButton.UseVisualStyleBackColor = false;
-            this.MalButton.Click += new System.EventHandler(this.zeichen_Click);
+            this.malButton.BackColor = System.Drawing.Color.GreenYellow;
+            this.malButton.Location = new System.Drawing.Point(302, 195);
+            this.malButton.Name = "malButton";
+            this.malButton.Size = new System.Drawing.Size(75, 35);
+            this.malButton.TabIndex = 17;
+            this.malButton.Text = "*";
+            this.malButton.UseVisualStyleBackColor = false;
+            this.malButton.Click += new System.EventHandler(this.zeichen_Click);
             // 
             // geteiltButton
             // 
@@ -268,6 +270,18 @@
             this.delButton.TabIndex = 21;
             this.delButton.Text = "DEL";
             this.delButton.UseVisualStyleBackColor = false;
+            this.delButton.Click += new System.EventHandler(this.delButton_Click);
+            // 
+            // operationLabel
+            // 
+            this.operationLabel.AutoSize = true;
+            this.operationLabel.BackColor = System.Drawing.Color.White;
+            this.operationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.operationLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.operationLabel.Location = new System.Drawing.Point(17, 26);
+            this.operationLabel.Name = "operationLabel";
+            this.operationLabel.Size = new System.Drawing.Size(0, 24);
+            this.operationLabel.TabIndex = 22;
             // 
             // TaschenrechnerForm
             // 
@@ -276,11 +290,12 @@
             this.BackColor = System.Drawing.Color.Gray;
             this.BackgroundImage = global::Taschenrechner.Properties.Resources.Wallario_Premium_Acrylglasbild_Planeten_im_Weltall_Sterne_Weltraum1;
             this.ClientSize = new System.Drawing.Size(401, 364);
+            this.Controls.Add(this.operationLabel);
             this.Controls.Add(this.delButton);
             this.Controls.Add(this.minusButton);
             this.Controls.Add(this.plusButton);
             this.Controls.Add(this.geteiltButton);
-            this.Controls.Add(this.MalButton);
+            this.Controls.Add(this.malButton);
             this.Controls.Add(this.ausgabeLabel);
             this.Controls.Add(this.kommerButton);
             this.Controls.Add(this.acButton);
@@ -298,8 +313,10 @@
             this.Controls.Add(this.ausgabeTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "TaschenrechnerForm";
             this.Text = "Taschenrechner";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TaschenrechnerForm_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,11 +339,12 @@
         private System.Windows.Forms.Button acButton;
         private System.Windows.Forms.Button kommerButton;
         private System.Windows.Forms.Label ausgabeLabel;
-        private System.Windows.Forms.Button MalButton;
+        private System.Windows.Forms.Button malButton;
         private System.Windows.Forms.Button geteiltButton;
         private System.Windows.Forms.Button plusButton;
         private System.Windows.Forms.Button minusButton;
         private System.Windows.Forms.Button delButton;
+        private System.Windows.Forms.Label operationLabel;
     }
 }
 
