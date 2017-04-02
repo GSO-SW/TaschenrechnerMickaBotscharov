@@ -31,7 +31,7 @@ namespace Taschenrechner
             if (b.Text == ",")
             {
                 if(!ausgabeTextBox.Text.Contains(","))
-                    ausgabeTextBox.Text = ausgabeTextBox.Text + b.Text;
+                    ausgabeTextBox.Text = ausgabeTextBox.Text + b.Text;            // Zur regelung der kommers
             }
             else
                 ausgabeTextBox.Text = ausgabeTextBox.Text + b.Text;
@@ -44,7 +44,7 @@ namespace Taschenrechner
 
         private void zeichen_Click(object sender, EventArgs e)
         {
-            Button b = (Button)sender;
+            Button b = (Button)sender;          // ermöglich die eingabe der Zeichen + - * / 
 
             if (wert != 0)
             {
@@ -72,7 +72,7 @@ namespace Taschenrechner
                     break;
                 case "-":
                     ausgabeTextBox.Text = (wert - Convert.ToDouble(ausgabeTextBox.Text)).ToString();
-                    break;
+                    break;                                                                                  // Rechnugen von + - * / 
                 case "*":
                     ausgabeTextBox.Text = (wert * Convert.ToDouble(ausgabeTextBox.Text)).ToString();
                     break;
@@ -89,13 +89,13 @@ namespace Taschenrechner
         private void delButton_Click(object sender, EventArgs e)
         {
             ausgabeTextBox.Text = "0";
-            wert = 0;
+            wert = 0;                               // Löscht die eingabe 
             operationLabel.Text = "";
         }
 
         private void TaschenrechnerForm_KeyPress(object sender, KeyPressEventArgs e)
         {
-            switch(e.KeyChar.ToString())
+            switch(e.KeyChar.ToString())                    // Ermögtlicht das eingeben per Tastatur
             {
                 case "0":
                     nullButton.PerformClick();
